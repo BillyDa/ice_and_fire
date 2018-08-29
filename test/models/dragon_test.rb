@@ -48,7 +48,6 @@ class DragonTest < ActiveSupport::TestCase
     # use your knowledge of factories to make this test pass!
     rider = build(:rider, name: "Aegon")
     dragon = build(:dragon, name: "Balerion", age: 14)
-
     # not allowed to change the assert statement!
     skip unless rider && dragon
     assert_equal("Balerion bucks off Aegon!", dragon.mount(rider))
